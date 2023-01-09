@@ -22,3 +22,20 @@ function solution(s) {
 // stack이 비어있으면 올바른 괄호들이 만들어진 것이기 때문에 최종적으로 true를 리턴한다.
 
 // stack 대신 Count를 0부터 +1, -1하면서 그 값을 리턴하면 length를 사용하지 않아도 된다.
+// function solution(s){
+//   let counter = 0;
+
+//   for(const c of s) {
+//       if(c === "(") {
+//           counter += 1;
+//       } else {
+//           if(counter === 0) {
+//               return false;
+//           } else {
+//               counter -= 1;
+//           }
+//       }
+//   }
+
+//   return counter === 0;
+// }
